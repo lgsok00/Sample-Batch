@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 @Configuration
 public class MetaDBConfig {
 
-  @Primary  // DB 충돌 방지
+  @Primary  // 메타 데이터 DB 설정
   @Bean
   @ConfigurationProperties(prefix = "spring.datasource-meta")
   // 메타 데이터 DB 연결을 위한 메서드
